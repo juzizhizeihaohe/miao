@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    header {
+      margin: 0;
+      background-color: black;
+    }
+
+    header p {
+      color: white;
+      margin: auto;
+      width: 600px;
+    }
+
+    body div {
+      margin-left: auto;
+      margin-right: auto;
+      width: 600px;
+    }
+
+    .chanping {
+      list-style: none;
+      padding: 0;
+    }
+
+    .links {
+      list-style: none;
+      padding: 0;
+    }
+
+    .chanping li {
+      margin-top: 15px;
+      border: black 3px solid;
+      width: 180px;
+      height: 40px;
+      background-color: red;
+      text-align: center;
+      line-height: 40px;
+    }
+
+    .chanping :nth-child(n+5) {
+      margin-left: 210px;
+    }
+
+    .chanping :nth-child(n+9) {
+      margin-left: 420px;
+    }
+
+    .chanping :nth-child(4) {
+      margin-bottom: -245px;
+    }
+
+    .chanping :nth-child(8) {
+      margin-bottom: -245px;
+    }
+
+    .links li {
+      border-bottom: black 1px dotted;
+    }
+
+    .links li:last-child {
+      border-bottom: transparent;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <p>hello world 请调整浏览器窗口大小查看效果</p>
+  </header>
+  <div>
+    <p class="zhuti">页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体
+      宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px
+      页面主体 宽度600px 页面主体 宽度600px</p>
+    <ul class="chanping">
+      <li>产品</li>
+      <li>产品</li>
+      <li>产品</li>
+      <li>产品</li>
+      <li>产品</li>
+      <li>产品</li>
+      <li>产品</li>
+      <li>产品</li>
+      <li>产品</li>
+      <li>产品</li>
+      <li>产品</li>
+      <li>产品</li>
+    </ul>
+
+    <ul class="links">
+      <li>links</li>
+      <li>links</li>
+      <li>links</li>
+      <li>links</li>
+      <li>links</li>
+    </ul>
+  </div>
+</body>
+
+</html>
