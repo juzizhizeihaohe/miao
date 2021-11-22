@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      border: transparent;
+    }
+
+    .a {
+      width: 200px;
+      height: 100%;
+      background-color: green;
+      z-index: 2;
+      position: absolute;
+    }
+
+    .b {
+      width: 80%;
+      height: 100%;
+      background-color: red;
+      z-index: 1;
+      position: absolute;
+    }
+
+    .c {
+      width: 10%;
+      height: 100%;
+      background-color: black;
+      z-index: 3;
+      position: absolute;
+      left: 80%;
+    }
+
+    .d {
+      width: 10%;
+      height: 100%;
+      background-color: yellow;
+      z-index: 3;
+      position: absolute;
+      left: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="a"></div>
+  <div class="b"></div>
+  <div class="c"></div>
+  <div class="d"></div>
+  <div class="e"></div>
+  <div class="f"></div>
+</body>
+
+</html>
