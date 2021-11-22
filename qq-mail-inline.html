@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>xcz</title>
+  <style>
+    * {
+      margin: 0;
+      font-size: 0;
+    }
+
+    header {
+      width: 100%;
+      height: 90px;
+      background-color: aquamarine;
+    }
+
+    .cebianlan {
+      display: inline-block;
+      overflow: hidden;
+      width: 150px;
+      height: calc(100vh - 90px);
+      background-color: yellow;
+    }
+
+    .main {
+      box-sizing: border-box;
+      display: inline-block;
+      width: calc(100vw - 150px);
+      height: calc(100vh - 90px);
+      background-color: brown;
+      overflow: hidden;
+      margin-top: calc(-100vh - 90px);
+    }
+  </style>
+</head>
+
+<body>
+  <header></header>
+  <div class="cebianlan"> </div>
+  <div class="main"> </div>
+</body>
+
+</html>
