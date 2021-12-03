@@ -1,0 +1,53 @@
+.lunbuotu{
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 600px;
+  height: 600px;
+  background-color:green;
+}
+
+.zuoanniu,
+.youanniu{
+  position: absolute;
+  top: 50%;
+  width: 50px;
+height: 50px;
+}
+
+
+.zuoanniu{
+  margin-top: -25px;
+background-color: gold;
+}
+
+.youanniu{
+  left: 100%;
+  margin-top: -25px;
+  margin-left: -50px ;
+background-color: gold;
+}
+
+.gundongtiao{
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -100px;
+  margin-bottom: 20px;
+  width: 200px;
+height: 20px;
+border-radius: 10px;
+background-color: fuchsia;
+}
+
+.box{
+  float: left;
+  margin: 5px 20px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 10px;
+  background-color: white;
+}
