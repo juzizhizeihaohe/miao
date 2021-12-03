@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 4000px;
+}
+
+.w{
+  width: 1200px;
+  margin: auto ;
+}
+
+.yeye{
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-top: 300px;
+  height: 600px;
+  background-color: black;
+}
+
+.baba{
+  position: absolute;
+  top: 300px;
+  left: 10px;
+  float: left;
+  height: 200px;
+  width: 200px;
+  background-color: aqua;
+}
+
+.haizi{
+  position: fixed;
+  top: 100px;
+right: 50%;
+margin-right: 600px;
+  width: 200px;
+  height: 200px;
+  background-color:red;
+}
+
+.sunzi{
+  float: right;
+  position: sticky;
+  margin-right: 313px;
+  margin-top: -600px;
+  top: 50px;
+  width: 100px;
+  height: 600px;
+  background-color: violet;
+
+}

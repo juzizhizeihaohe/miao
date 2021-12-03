@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  color: rgb(176, 176, 176);
+  font-size: 12px;
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+.w{
+  width: 1220px;
+  margin: auto;
+}
+
+.taitou{
+  background-color: rgb(51,51,51);
+  height: 40px;
+}
+
+.nov{
+  height: 40px;
+  xbackground-color: red;
+}
+
+.nov a,span{
+  display: inline-block;
+  line-height: 40px;
+margin-left: 6px;
+}
+
+.zuo{
+  float: left;
+}
+
+.you{
+  float: right;
+}
+
+.fuhao{
+  color: rgb(66, 60, 55);
+}
+
+ ul li a.anniu{
+  margin: 0 0 0 30px;
+  height: 40px;
+  background-color: rgb(66, 66, 66);
+  width: 100px;
+  background-image: url('img/Snipaste_2021-12-01_15-55-39.png');
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-position:left;
+
+}
+
+.anniu:hover{
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 103, 0);
+}
+
+.gowuche{
+  width: 0px;
+  height: 0px;
+  background-color: red;
+}
+
+div.logo{
+  height: 100px;
+  xbackground-color: red;
+  background-image: url(//s02.mifile.cn/assets/static/image/logo-mi2.png);
+  background-repeat: no-repeat;
+  background-size: 56px;
+  background-position:left;
+}
+
+.gouwuchetext{
+margin-left: 30px;
+}
+
+.xialalan{
+  height: 100px;
+  xbackground-color: blue;
+  margin:0  0 0 230px;
+}
+
+.xialalan li a{
+  float: left;
+  margin-left:15px;
+  display: inline-block;
+line-height: 100px;
+color: black;
+font-size: 16px;
+}
+
+
+
+.soushuokuang input{
+  height: 41px;
+  width: 200px;
+}
+
+.soushuokuang button{
+width: 45px;
+height: 45px;
+position: absolute;
+}
+
+.sousuo {
+  display: inline-block;
+  position: relative;
+}
+
+.sousuo form{
+  float:right;
+  display: inline-block;
+  margin: 25px 0 0 180px;
+}

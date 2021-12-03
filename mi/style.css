@@ -1,0 +1,69 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/* 清除内外边距 */
+
+.w{
+  width: 1220px;
+  margin: auto;
+}
+/* 确认版心 后面页外边距修改时注意层叠性*/
+
+li{
+  list-style: none;
+}
+/* 清除列表自带的样式 */
+
+a{
+  text-decoration: none;
+  /* 去除链接自带的文字样式 */
+}
+
+.header{
+  width: 100%;
+  height: 40px;
+  background-color:rgb(51, 51, 51);
+overflow: hidden;
+}
+
+.nav {
+float: left;
+/* 添加浮动 如果前面还有盒子也要一起加浮动，不然会超出其父元素*/
+margin-left: 340px;
+/* 直接添加外页边距确定位置 */
+}
+
+.nav ul li{
+  float:left
+  /* li为块级元素，a标签属于行内元素，li需要跨行显示，a在行内显示，内容不在同一行的原因是因为li的属性，所有要让li浮动。 */
+}
+
+.nav ul li a{
+  display: block;
+  xwidth: 80px;
+  /* 行内块元素不需要设置宽度,影响自适应性 后续添加删除内容不影响布局*/
+  padding:0 3.5px;
+   /* 把a转换为块级元素设置宽高，扩大选取范围,链接里的字数不同不要设置死宽度,可通过弹性盒子显示 */
+line-height: 40px;
+/* 使文字垂直方向居中 */
+font-size: 12px;
+/* 设置文字大小 */
+color: rgb(176, 176, 176);
+/* 更改文字颜色 */
+}
+
+ .nav ul li a:hover{
+  color: wheat;
+  /* 使用高权重选择器层叠之前低权重选择器设置的属性 */
+}
+
+.nav ul li a.fuhao{
+  color: rgb(63, 66, 60);
+}
+
+.youce {
+  float: right;
+  padding-left: 0 200px;
+}
+
