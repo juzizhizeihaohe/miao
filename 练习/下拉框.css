@@ -50,13 +50,15 @@ text-align: center;
 text-height: 40px;
 }
 
-.erzi{
+.erzi li{
   display: none;
   width: 100%;
   height: 100%;
   margin-bottom: 6px;
 }
 
-.erzi:hover{
+.xzc:hover li{
   display: block;
 }
+
+.xzc:hover
