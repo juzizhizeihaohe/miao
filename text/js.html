@@ -1,0 +1,20 @@
+<script>
+  var a = parseInt(prompt('a:'))
+  var b = parseInt(prompt('b:'))
+  var c = parseInt(prompt('c:'))
+
+  var delta = b * b - 4 * a * c
+
+  if (delta < 0) {
+    console.log("无解")
+  } else {
+    var sqrtDelta = Math.sqrt(delta)
+
+    var x1 = (-b + sqrtDelta) / (2 * a)
+    var x2 = (-b - sqrtDelta) / (2 * a)
+
+    alert('x1=' + x1)
+    alert('x2=' + x2)
+  }
+  console.log
+</script>

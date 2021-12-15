@@ -135,8 +135,241 @@
   console.log(2**n);
 </script> 
 
+
 <script id="ch0104/01">
   var n = Number(prompt('n'));
-  console.log();
+  if (n > 0) {
+    console.log("positive");
+  } else if (n == 0) {
+    console.log("zero");
+  } else if (n < 0) {
+    console.log("negative");
+  }
 </script>
 
+
+<script id="ch0104/02">
+  var n = Number(prompt('n'))
+  if (n % 1 == 0) {
+    console.log("请输入浮点数")
+  }else if (n % 1 != 0){
+    var x = (n**2);
+    var y = (Math.sqrt(x))
+    console.log(y)
+  }
+</script>
+
+
+<script id="ch0104/03">
+  var n = Number(prompt('n'))
+  if (n < 0) {
+    console.log(" 请输入大于零的数")
+  } else if (n % 1 != 0) {
+    console.log("请输入整数")
+  } else if (n % 2 == 0) {
+    console.log("even")
+  } else if (n % 2 != 0) {
+    console.log("odd")
+  }
+</script>
+
+<script id="ch0104/04">
+  var n = (prompt('n'))
+  var x = (n.charCodeAt(0))
+  if (x % 2 == 0){
+    console.log("NO")
+  }else if(x % 2 != 0){
+    console.log("YES")
+  }
+</script>
+
+
+<script id="ch0104/05">
+  var x = (prompt('x'))
+  var y = (prompt('y'))
+  if (x > y) {
+    console.log(">")
+  } else if (x < y) {
+    console.log("<")
+  } else if (x = y) {
+    console.log("=")
+  } 
+</script>
+
+
+<script id="ch0104/06">
+  var n = (prompt('n'))
+  if (n <= 0) {
+    console.log("请输入正整数")
+  } else if (n - 100 >= 0) {
+    console.log(0)
+  } else {
+    console.log(1)
+  }
+</script>
+
+
+<script id="ch0104/07">
+  var x = (prompt('x'))
+  var y = (prompt('y'))
+  if (x >= 10) {
+    console.log(1)
+  } else if (y >= 20) {
+    console.log(1)
+  } else {
+    console.log(0)
+  }
+</script>
+
+
+<script id="ch0104/08">
+  var n = (prompt('n'))
+if (n % 3 == 0 , n % 5 == 0){
+  console.log("YES")
+}else{
+  console.log("NO")
+}
+</script>
+
+
+<script id="ch0104/09">
+  var n = (prompt('n'))
+  if (n % 3 == 0 && n % 5 == 0 && n % 7 == 0) {
+    console.log("3", "5", "7")
+  }  else if (n % 3 == 0 && n % 5 == 0) {
+    console.log("3", "5")
+  } else if (n % 3 == 0 && n % 7 == 0) {
+    console.log("3", "7")
+  } else if (n % 5 == 0 && n % 7 == 0) {
+    console.log("5", "7")
+  } else if (n % 3 == 0 ) {
+    console.log("3")
+  }else if (n % 5 == 0 ) {
+    console.log("5")
+  }else if (n % 7 == 0 ) {
+    console.log("7")
+  }else if (n % 3 != 0 && n % 5 != 0 && n % 7 != 0) {
+    console.log("n")
+  }
+</script>
+
+
+<script id="ch0104/10">
+  var x = Number(prompt('x'))
+  var y = Number(prompt('y'))
+if (x < 60 || y < 60){
+  console.log(1)
+}else{
+  console.log(0)
+}
+</script>
+
+<script id="ch0104/11">
+  var n = Number(prompt('n'))
+  if (n < 1, n > 7) {
+    console.log("请输入星期一到星期日")
+  }
+  else if (n == 1 || n == 3 || n == 5) {
+    console.log("NO")
+  } else {
+    console.log("YES")
+  }
+</script>
+
+
+<script id="ch0104/12">
+  var n = Number(prompt('n'))
+  var zxc = Number(n / 3 + 27 + 23)
+  var zl = Number(n / 1.2)
+  if (zxc < zl){
+    console.log("bike")
+  }else if (zxc > zl){
+    console.log("walk")
+  }else if (zxc = zl){
+    console.log("all")
+  }
+</script>
+
+
+<script id="ch0104/13">
+  var x = Number(prompt('x'))
+  if (x >= 0 && 5 > x) {
+    console.log((-x + 2.5).toFixed(3))
+}if (5 <= x && x<10){
+  console.log((2-1.5(x-3)(x-3)).toFixed(3))
+}else if (10<= x && x<20){
+  console.log((x/2-1.5).toFixed(3))
+}
+</script>
+
+
+<script id="ch0104/14">
+  var x = Number(prompt('x'))
+  var j = (prompt(''))
+  var p = 8
+// 加急
+if (x<=1000){
+(f=p)
+}else if (1000>x){
+ var z = ((((x-1000)/1000).Math.ceil))
+}
+console.log(z)
+</script>
+
+
+<script id="ch0104/15">
+  var x = (prompt('x'))
+  var y = (prompt('y'))
+  var z = (prompt('z'))
+  if (x > y && x > z) {
+    console.log(x)
+  } else if (y > x && y > z) {
+    console.log(y)
+  } else if (z > x && z > y) {
+    console.log(z)
+  }
+</script>
+
+
+<script id="ch0104/16">
+  var x = Number(prompt('x'))
+  var y = Number(prompt('y'))
+  var z = Number(prompt('z'))
+  if (((x + y) > z) && ((x + z) > y) && ((z + y) > x)) {
+    console.log("YES")
+  } else {
+    console.log("NO")
+  }
+</script>
+
+
+<script id="ch0104/17">
+  var x = Number(prompt('x'))
+  if (x%4==0){
+    if (x%100==0){
+      if (x%400==0){
+        console.log("N")
+      }
+    }if (x%3200==0){
+      console.log("N")
+    }
+  }else{
+    console.log("Y")
+  }
+</script>
+
+<script id="ch0104/17">
+  var x = Number(prompt('x'))
+  var y = Number(prompt('y'))
+  if (x <= 1 && x >= -1 && y <= 1 && y >= -1) {
+    console.log("YES")
+  } else{
+    console.log("NO")
+  }
+</script>
+
+
+<script id="ch0104/16">
+  var x = Number(prompt('x'))
+  var y = Number(prompt('y'))
+</script>
