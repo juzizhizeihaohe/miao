@@ -276,11 +276,11 @@
   }
 </script>
 
-
+ <!-- 最好不要用这种方式，直接算出两种方式的交叉值，作比较就可以了
 <script id="ch0104/12">
   var n = Number(prompt('n'))
   var zxc = Number(n / 3 + 27 + 23)
-  var zl = Number(n / 1.2)
+  var zl = Number(n / 1.2)有浮点数，不能相等
   if (zxc < zl) {
     console.log("bike")
   } else if (zxc > zl) {
@@ -288,6 +288,17 @@
   } else if (zxc = zl) {
     console.log("all")
   }
+</script> -->
+
+<script id="ch0104/12">
+    var n = Number(prompt('n'))
+if (n>100){
+  console.log("bike")
+}else if(n<100){
+  console.log("walk")
+}else if (n=100){
+  console.log("all")
+}
 </script>
 
 
