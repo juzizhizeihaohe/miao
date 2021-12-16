@@ -276,7 +276,7 @@
   }
 </script>
 
- <!-- 最好不要用这种方式，直接算出两种方式的交叉值，作比较就可以了
+<!-- 最好不要用这种方式，直接算出两种方式的交叉值，作比较就可以了
 <script id="ch0104/12">
   var n = Number(prompt('n'))
   var zxc = Number(n / 3 + 27 + 23)
@@ -291,16 +291,11 @@
 </script> -->
 
 <script id="ch0104/12">
-    var n = Number(prompt('n'))
-if (n>100){
-  console.log("bike")
-}else if(n<100){
-  console.log("walk")
-}else if (n=100){
-  console.log("all")
-}
+  let num1 = parseInt(prompt("请输入参数1"));
+  let bikeTime = num1 / 3 + 27 + 23;
+  let walkTime = num1 / 1.2;
+  console.log(bikeTime > walkTime ? "walk" : bikeTime === walkTime ? "All" : "Bike");
 </script>
-
 
 <script id="ch0104/13">
   var x = Number(prompt('x'))
@@ -319,14 +314,15 @@ if (n>100){
   var j = (prompt('是否加急'))
   var z = (Math.ceil((w - 1000) / 500)) * 4
   if (w < 1000 && j == "y") {
-    console.log(8 + 5)}
-   else if (w < 1000 && j == "n") {
-      console.log(8)
-    }else if (w > 1000 && j == "y") {
-      console.log(8 + z + 5)
-    }else if (w > 1000 && j == "n") {
-      console.log(8 + z)
-    }
+    console.log(8 + 5)
+  }
+  else if (w < 1000 && j == "n") {
+    console.log(8)
+  } else if (w > 1000 && j == "y") {
+    console.log(8 + z + 5)
+  } else if (w > 1000 && j == "n") {
+    console.log(8 + z)
+  }
 </script>
 
 
@@ -406,7 +402,21 @@ if (n>100){
 
 
 <script id="ch0104/20">
-
+  let a = Number(prompt('输入a'));
+  let b = Number(prompt('输入b'));
+  let c = Number(prompt('输入c'));
+  if (b * b === (4 * a * c)) {
+    let x1 = x2 = (-b + Math.sqrt(b ** 2 - 4 * a * c)) / (2 * a);
+    console.log('x1' + '=' + x1.toFixed(5) + ';' + 'x2' + '=' + x2.toFixed(5));
+  } else if (b * b > (4 * a * c)) {
+    let x1 = (-b + Math.sqrt(b ** 2 - 4 * a * c)) / (2 * a);
+    let x2 = (-b - Math.sqrt(b ** 2 - 4 * a * c)) / (2 * a);
+    console.log('x1' + '=' + x1.Math.toFixed(5) + ';' + 'x2' + '=' + x2.toFixed(5));
+  } else {
+    let x1 = (-b / (2 * a)).toFixed(5) + '+' + String((Math.sqrt(4 * a * c - b * b) / (2 * a)).toFixed(5)) + 'i';
+    let x2 = (-b / (2 * a)).toFixed(5) + '-' + String((Math.sqrt(4 * a * c - b * b) / (2 * a)).toFixed(5)) + 'i';
+    console.log('x1' + '=' + x1 + ';' + 'x2' + '=' + x2);
+  }
 </script>
 
 <script id="ch0104/21">
