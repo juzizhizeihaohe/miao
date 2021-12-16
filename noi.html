@@ -315,20 +315,22 @@ if (n>100){
 
 
 <script id="ch0104/14">
-  var x = Number(prompt('x'))
-  var j = (prompt(''))
-  var p = 8
-  // 加急
-  if (x <= 1000) {
-    (f = p)
-  } else if (1000 > x) {
-    var z = ((((x - 1000) / 1000).Math.ceil))
-  }
-  console.log(z)
+  var w = Number(prompt('重量'))
+  var j = (prompt('是否加急'))
+  var z = (Math.ceil((w - 1000) / 500)) * 4
+  if (w < 1000 && j == "y") {
+    console.log(8 + 5)}
+   else if (w < 1000 && j == "n") {
+      console.log(8)
+    }else if (w > 1000 && j == "y") {
+      console.log(8 + z + 5)
+    }else if (w > 1000 && j == "n") {
+      console.log(8 + z)
+    }
 </script>
 
 
-<script id="ch0104/15">//sdfsdfsdfsdfsdf
+<script id="ch0104/15">
   var x = (prompt('x'))
   var y = (prompt('y'))
   var z = (prompt('z'))
@@ -347,35 +349,34 @@ if (n>100){
   var y = Number(prompt('y'))
   var z = Number(prompt('z'))
   if (((x + y) > z) && ((x + z) > y) && ((z + y) > x)) {
-    console.log("YES")
+    console.log("yes")
   } else {
-    console.log("NO")
+    console.log("no")
   }
 </script>
 
 
-<script id="ch0104/17">
-  var x = Number(prompt('x'))
-  if (x % 4 == 0) {
-    if (x % 100 == 0) {
-      if (x % 400 == 0) {
-        console.log("N")
-      }
-    } if (x % 3200 == 0) {
-      console.log("N")
-    }
+<script type="" id="ch0104/17">
+  let year = parseFloat(prompt("请输入参数1"));
+  let res;
+  if((year % 4 === 0 && year % 100 !== 0 ) || year % 400 === 0) {
+    res = "Y"
   } else {
-    console.log("Y")
+    res = "N"
   }
+  if(year % 3200 === 0) {
+    res = "N"
+  }
+  console.log(res);
 </script>
 
 <script id="ch0104/18">
   var x = Number(prompt('x'))
   var y = Number(prompt('y'))
   if (x <= 1 && x >= -1 && y <= 1 && y >= -1) {
-    console.log("YES")
+    console.log("yes")
   } else {
-    console.log("NO")
+    console.log("no")
   }
 </script>
 
