@@ -429,3 +429,47 @@
     a = (Math.ceil(p))
   } console.log(n - a)
 </script>
+
+<script id="ch0105/01">
+  var x = Number(prompt('人数'))
+  var he = 0
+  for (i = 0; i < x; i = i + 1) {
+    he = he + Number(prompt('年龄'))
+  } console.log((he / x).toFixed(2))
+</script>
+
+<script id="ch0105/02">
+  var nian = 12
+  var he = 0
+  for (i=0;i<12;i++){
+he = he + Number(prompt("结余"))
+  }console.log("$"+he/nian)
+</script>
+
+<script id="ch0105/03">
+  var n = Number(prompt("样本容量"))
+  var he = 0
+  for (i=0; i<n;i=i+1 ){
+    he = he + Number(prompt("值"))
+  }console.log((he / n).toFixed(4))
+  </script>
+  
+  <script id="ch0105/04">
+    var n = Number(prompt("样本数量"))
+    var he = 0
+    var p = 0
+    for (i = 0; i < n; i = i + 1) {
+      he = he + Number(prompt("值"))
+    } p = ((he / n).toFixed(5))
+    console.log(he+" "+p)
+  </script>
+
+<script id="ch0105/05">
+  var n = Number(prompt("样本容量"))
+  var max = 0
+  var x = 0
+  for (i = 0; i < n; i = i + 1) {
+    x = Number(prompt("值"))
+    max = Math.max(max,x)
+  } console.log(max)
+</script>

@@ -1,9 +1,13 @@
-<script id="ch0104/18">
-  let num1 = parseInt(prompt("请输入参数1"));
-  let num2 = parseInt(prompt("请输入参数2"));
-  if (num1 >= -1 && num1 <= 1 && num2 >= -1 && num2 <= 1) {
-    console.log("yes");
-  } else {
-    console.log("no");
-  }
+<script   id="ch0105/06">
+  let num = Number(prompt(""));
+let max = 0;
+let min = 0;
+for (let i = 0; i < num; i++) {
+  x = Number(prompt(""));
+  max = Math.max(x, max);
+  min = Math.min(x, min);
+}
+console.log(max - min);
 </script>
+
+
