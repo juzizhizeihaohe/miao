@@ -1,13 +1,11 @@
-<script   id="ch0105/06">
-  let num = Number(prompt(""));
-let max = 0;
-let min = 0;
-for (let i = 0; i < num; i++) {
-  x = Number(prompt(""));
-  max = Math.max(x, max);
-  min = Math.min(x, min);
-}
-console.log(max - min);
+<script id="ch0105/09">
+  var m = Number(prompt("m"))
+  var n = Number(prompt("n"))
+  var x = m
+  var sum = 0
+  while (x <= n) {
+    if (x % 17 == 0) {
+      sum = sum + x
+    } x = x + 1
+  } console.log(sum)
 </script>
-
-
