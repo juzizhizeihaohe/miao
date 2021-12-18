@@ -441,28 +441,28 @@
 <script id="ch0105/02">
   var nian = 12
   var he = 0
-  for (i=0;i<12;i++){
-he = he + Number(prompt("结余"))
-  }console.log("$"+he/nian)
+  for (i = 0; i < 12; i++) {
+    he = he + Number(prompt("结余"))
+  } console.log("$" + he / nian)
 </script>
 
 <script id="ch0105/03">
   var n = Number(prompt("样本容量"))
   var he = 0
-  for (i=0; i<n;i=i+1 ){
+  for (i = 0; i < n; i = i + 1) {
     he = he + Number(prompt("值"))
-  }console.log((he / n).toFixed(4))
-  </script>
-  
-  <script id="ch0105/04">
-    var n = Number(prompt("样本数量"))
-    var he = 0
-    var p = 0
-    for (i = 0; i < n; i = i + 1) {
-      he = he + Number(prompt("值"))
-    } p = ((he / n).toFixed(5))
-    console.log(he+" "+p)
-  </script>
+  } console.log((he / n).toFixed(4))
+</script>
+
+<script id="ch0105/04">
+  var n = Number(prompt("样本数量"))
+  var he = 0
+  var p = 0
+  for (i = 0; i < n; i = i + 1) {
+    he = he + Number(prompt("值"))
+  } p = ((he / n).toFixed(5))
+  console.log(he + " " + p)
+</script>
 
 <!-- <script id="ch0105/05">
   var n = Number(prompt("样本容量"))
@@ -479,11 +479,11 @@ he = he + Number(prompt("结余"))
   var max = Number(prompt("第一个人的成绩"))
   for (i = 0; i < n; i++) {
     var next = Number(prompt("下一个人的成绩"))
-    if (max < next) { 
+    if (max < next) {
       max = next
     }
   }
-console.log(max)
+  console.log(max)
 </script>
 
 <script id="ch0105/06">
@@ -492,14 +492,14 @@ console.log(max)
   var min = 1000
   for (i = 0; i < n; i++) {
     var next = Number(prompt("输入数字"))
-    if (max < next) { 
+    if (max < next) {
       max = next
     }
-     if (min > next){
+    if (min > next) {
       min = next
     }
   }
-console.log(max - min)
+  console.log(max - min)
 </script>
 
 <script id="ch0105/07">
@@ -518,10 +518,10 @@ console.log(max - min)
   var 边数 = Number(prompt("多少边"))
   var 内角和 = (边数 - 2) * 180
   var 角度 = 0
-  for (i = 0; i < 边数-1; i++) {
+  for (i = 0; i < 边数 - 1; i++) {
     var 角度 = Number(prompt("角度"))
-    内角和 = 内角和 -  角度
-  }console.log(内角和)
+    内角和 = 内角和 - 角度
+  } console.log(内角和)
   debugger
 </script>
 
@@ -550,4 +550,40 @@ console.log(max - min)
       sum = sum + x
     } x = x + 1
   } console.log(sum)
+</script>
+
+<script id="ch0105/11">
+  var k = Number(prompt("k"))
+
+  var a = 0
+  var b = 0
+  var c = 0
+
+  for (i = 0; i < k; i++) {//循环次数包含0，如果加上=就是n+1的次数
+    var q = Number(prompt("q"))
+    if (q == 1) {
+      a = a + 1
+    } if (q == 5) {
+      b = b + 1
+    } if (q == 10) {
+      c = c + 1
+    }
+  } 
+  console.log(a);
+  console.log(b);
+  console.log(c);
+</script>
+
+<script id="ch0105/11">
+  var n = Number(prompt("n"))
+  var m = Number(prompt("m"))
+  var j = 0
+
+  for (i = 0; i < n; i++) {
+    q = Number(prompt("q"))
+    if (m == q) {
+      j = j + 1
+    }
+  } console.log(j);
+  
 </script>
