@@ -613,3 +613,19 @@
     M=M+M*0.05
   }console.log(Math.floor(M))
 </script>
+
+<script id="ch0105/16">
+  var n = Number(prompt("n"))
+  var k = (Number(prompt("k")) / 100)
+  var h = n
+  var f = 200
+
+  for (var i = 2; i <= 20; i++) {
+    h = h + n
+    f = f + f * k
+    if (h >= f) {
+      console.log(i)
+      break
+    }
+  }
+</script>
