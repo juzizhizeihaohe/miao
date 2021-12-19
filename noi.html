@@ -568,13 +568,13 @@
     } if (q == 10) {
       c = c + 1
     }
-  } 
+  }
   console.log(a);
   console.log(b);
   console.log(c);
 </script>
 
-<script id="ch0105/11">
+<script id="ch0105/12">
   var n = Number(prompt("n"))
   var m = Number(prompt("m"))
   var j = 0
@@ -585,5 +585,31 @@
       j = j + 1
     }
   } console.log(j);
-  
+
+</script>
+
+<script id="ch0105/13">
+  var a = Number(prompt("a"))
+  var n = Number(prompt("n"))
+  var j = a
+  for (i = 0; i < n - 1; i++) {
+    a = a * j
+  } console.log(a)
+</script>
+
+<script id="ch0105/14">
+  var x = Number(prompt("x"))
+  var n = Number(prompt("n"))
+  for (i = 0; i < n; i++) {
+    x = x + x * 0.001
+  } console.log((x).toFixed(4))
+</script>
+
+<script id="ch0105/15">
+  var R = Number(prompt("R"))
+  var M = Number(prompt("M"))
+  var Y = Number(prompt("Y"))
+  for (i = 0; i < Y; i++){
+    M=M+M*0.05
+  }console.log(Math.floor(M))
 </script>
