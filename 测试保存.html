@@ -1,0 +1,514 @@
+<script id=>1
+  var a = Number(prompt("a"))
+  var b = Number(prompt("b"))
+
+  console.log(a + b)
+</script>
+
+<script>2
+  var a = Number(prompt("a"))
+  var b = Number(prompt("b"))
+  var c = Number(prompt("c"))
+  var sum = a + b
+
+  console.log(sum * c)
+</script>
+
+<script>3
+  var a = Number(prompt("a"))
+  var b = Number(prompt("b"))
+  var c = Number(prompt("c"))
+  var sum = a + b
+
+  console.log(parseInt(sum / c))
+</script>
+
+<script>4
+  var a = Number(prompt("a"))
+  var b = Number(prompt("b"))
+  var chu = a / b
+  var yu = a % b
+
+  console.log(parseInt(chu))
+  console.log(yu)
+</script>
+
+<script>5
+  var a = Number(prompt("a"))
+  var b = Number(prompt("b"))
+  var zhi = a / b
+
+  console.log((zhi).toFixed(9))
+</script>
+
+<script>6
+  var 确诊数 = Number(prompt("确诊数"))
+  var 死亡数 = Number(prompt("死亡数"))
+  var 死亡率 = 死亡数 / 确诊数
+
+  console.log(((死亡率 * 100).toFixed(3)) + "%")
+</script>
+
+<script>7
+  var x = Number(prompt("x"))
+  var a = Number(prompt("a"))
+  var b = Number(prompt("b"))
+  var c = Number(prompt("c"))
+  var d = Number(prompt("d"))
+
+  var ax3 = a * x * x * x
+  var bx2 = b * x * x
+  var cx = c * x
+
+  console.log((ax3 + bx2 + cx + d).toFixed(7))
+</script>
+
+<script>8
+  var f = Number(prompt("f"))
+
+  var jian = f - 32
+  var chu = jian / 9
+  var C = 5 * chu
+
+  console.log((C).toFixed(5))
+</script>
+
+<script>9
+  var r = Number(prompt("r"))
+
+  var zhujing = (r * 2).toFixed(4)
+  var zhouchang = (2 * Math.PI * r).toFixed(4)
+  //.toFixed使用银行家算法四舍五入，与预期结果不同
+  var mianji = (Math.PI * r * r).toFixed(4)
+
+  console.log(zhujing, zhouchang, mianji)
+</script>
+
+<script>10
+  var r1 = Number(prompt("r1"))
+  var r2 = Number(prompt("r2"))
+
+  var r1baifenbi = 1 / r1
+  var r2baifenbi = 1 / r2
+  var sum = r1baifenbi + r2baifenbi
+  var R = 1 / sum
+
+  console.log((R).toFixed(2))
+</script>
+
+<script>11
+  var a = Number(prompt("a"))
+  var b = Number(prompt("b"))
+
+  var yushu = (a % b).toFixed(4)
+
+  console.log(yushu)
+</script>
+
+<script>12
+  var pi = 3.14
+  var sr = Number(prompt("sr"))
+
+  var chu = 4 / 3
+  var pir3 = (pi * sr * sr * sr)
+
+  var V = ((pir3 * chu).toFixed(2))
+
+  console.log(V)
+</script>
+
+<script>13
+  var n = Number(prompt("n"))
+
+  var ge = n % 10
+  var shi = ((n - ge) % 100)
+  var bai = (n - (shi + ge)) / 100
+
+  console.log(ge + "" + shi / 10 + "" + bai)
+</script>
+
+<script>14
+  var h = Number(prompt("h"))
+  var r = Number(prompt("r"))
+
+  var tiji = (Math.PI * r * r * h) / 1000
+  var tongshu = Math.ceil(20 / tiji)
+
+  console.log(tongshu)
+</script>
+
+<script>15
+  var n = Number(prompt("n"))
+  var x = Number(prompt("x"))
+  var y = Number(prompt("y"))
+
+  var chile = Math.ceil(y / x)
+  var sheng = n - chile
+
+  console.log(sheng)
+</script>
+
+<script>16
+  var xa = Number(prompt("xa"))
+  var xb = Number(prompt("xb"))
+  var ya = Number(prompt("ya"))
+  var yb = Number(prompt("yb"))
+
+  var x = (xa - xb) * (xa - xb)
+  var y = (ya - yb) * (ya - yb)
+  var sum = Math.sqrt(x + y)
+
+  console.log((sum).toFixed(3))
+</script>
+
+<script>17
+  var x1 = Number(prompt("x1"))
+  var y1 = Number(prompt("y1"))
+  var x2 = Number(prompt("x2"))
+  var y2 = Number(prompt("y2"))
+  var x3 = Number(prompt("x3"))
+  var y3 = Number(prompt("y3"))
+
+  var onex = ((x1 - x2) * (x1 - x2))
+  var oney = ((y1 - y2) * (y1 - y2))
+  var onesum = Math.sqrt(onex + oney)
+
+  var twox = ((x1 - x3) * (x1 - x3))
+  var twoy = ((y1 - y3) * (y1 - y3))
+  var twosum = Math.sqrt(twox + twoy)
+
+  var threex = ((x2 - x3) * (x2 - x3))
+  var threey = ((y2 - y3) * (y2 - y3))
+  var threesum = Math.sqrt(threex + threey)
+
+  var p = (onesum + twosum + threesum) / 2
+  var s = Math.sqrt(p * (p - onesum) * (p - twosum) * (p - threesum))
+
+  console.log((s).toFixed(2))
+</script>
+
+<script>18
+  var a1 = Number(prompt("a1"))
+  var a2 = Number(prompt("a2"))
+  var a3 = a2 - a1
+  var n = Number(prompt("n"))
+
+  var sum = a1 + (n - 1) * a3
+  console.log(sum)
+</script>
+
+<script>19
+  var a = Number(prompt("a"))
+  var b = Number(prompt("b"))
+
+  var ride = a * b
+  console.log(ride)
+</script>
+
+<script>20
+  var n = Number(prompt("n"))
+  var s = Math.pow(2, n)
+
+  console.log(s)
+</script>
+
+<!-- if 循环 -->
+
+<script>1
+  var n = Number(prompt("n"))
+
+  if (n > 0) {
+    console.log("positive")
+  } else if (n == 0) {
+    console.log("zero")
+  } else if (n < 0) {
+    console.log("negative")
+  }
+</script>
+
+<script>2
+  var n = Number(prompt("n"))
+
+  if (n > 0) {
+    console.log((n).toFixed(2))
+  } else if (n < 0) {
+    console.log((-n).toFixed(2))
+  }
+</script>
+
+<script>3
+  var n = Number(prompt("n"))
+
+  if (n % 2 == 0) {
+    console.log("even")
+  } else if (n % 2 == 1) {
+    console.log("odd")
+  } else {
+    console.log("zero")
+  }
+</script>
+
+<script>4
+  var n = (prompt("n"))
+  var a = n.charCodeAt(0)
+
+  if (a % 2 == 1) {
+    console.log("YES")
+  } else if (a % 2 == 0) {
+    console.log("NO")
+  }
+</script>
+
+<script>5
+  var x = Number(prompt("x"))
+  var y = Number(prompt("y"))
+
+  if (x > y) {
+    console.log(">")
+  } else if (x < y) {
+    console.log("<")
+  } else {
+    console.log("=")
+  }
+</script>
+
+<script>6
+  var n = Number(prompt("n"))
+
+  if (n >= 10 && n <= 99) {
+    console.log(1)
+  } else {
+    console.log(0)
+  }
+</script>
+
+<script>7
+  var xy = Number(prompt("xy"))
+  var gl = Number(prompt("gl"))
+
+  if (xy >= 10) {
+    console.log(1)
+  } else if (gl >= 20) {
+    console.log(1)
+  } else {
+    console.log(0)
+  }
+</script>
+
+<script>8
+  var n = Number(prompt("n"))
+
+  if (n % 5 == 0 && n % 3 == 0) {
+    console.log("YES")
+  } else {
+    console.log("NO")
+  }
+</script>
+
+<script>9
+  var n = Number(prompt("n"))
+
+  if (n % 3 != 0 && n % 5 != 0 && n % 7 != 0) {
+    console.log("n")
+  } if (n % 3 == 0) {
+    console.log("3")
+  } if (n % 5 == 0) {
+    console.log("5")
+  } if (n % 7 == 0) {
+    console.log("7")
+  }
+</script>
+
+<!-- <script>9
+  var n = Number(prompt("n"))
+
+  if (n == 0) {
+    console.log("zero")
+  } else if (n % 3 != 0 && n % 5 != 0 && n % 7 != 0) {
+    console.log("n")
+  } else if (n % 3 == 0 && n % 5 == 0 && n % 7 == 0) {
+    console.log("3" + " " + "5" + " " + "7")
+  } else if (n % 3 == 0 && n % 5 == 0) {
+    console.log("3" + " " + "5")
+  } else if (n % 7 == 0 && n % 5 == 0) {
+    console.log("5" + " " + "7")
+  } else if (n % 3 == 0) {
+    console.log("3")
+  } else if (n % 5 == 0) {
+    console.log("5")
+  } else if (n % 7 == 0) {
+    console.log("7")
+  }
+</script> -->
+
+<script>10
+  var a = Number(prompt("a"))
+  var b = Number(prompt("b"))
+
+  if (a < 60 || b < 60) {
+    console.log(1)
+  } else {
+    console.log(0)
+  }
+</script>
+
+<script>11
+  var a = Number(prompt("a"))
+
+  if (a == 7) {
+    console.log("YES")
+  } else if (a % 2 == 0) {
+    console.log("YES")
+  } else {
+    console.log("NO")
+  }
+</script>
+
+<script>12
+  var j = Number(prompt("j"))
+
+  var b = 27 + 23 + (j / 3)
+  var w = j / 1.2
+
+  if (w == b) {
+    console.log("Aii")
+  } else if (w > b) {
+    console.log("Bike")
+  } else {
+    console.log("Walk")
+  }
+</script>
+
+<script>13
+  var n = Number(prompt("n"))
+
+  if (0 <= n && n < 5) {
+    var a = -n + 2.5
+    console.log(a)
+  } else if (n < 10) {
+    var b = 2 - 1.5 * (n - 3) * (n - 3)
+    console.log(b)
+  } else if (10 <= n && n < 20) {
+    var c = n / 2 - 1.5
+    console.log(c)
+  }
+</script>
+
+<script>14
+  var jiaji = prompt()
+  var n = Number(prompt("n"))
+  var jg = 0
+
+  if (jiaji == "") {
+    if (n <= 1000) {
+      jg = jg + 8
+    } if (n > 1000) {
+      var jiajia = Math.round((n - 1000) / 1000)
+      jg = jg + 8 + (jiajia + 1) * 4
+    } console.log(jg)
+  } else if (jiaji == "y") {
+    if (n <= 1000) {
+      jg = jg + 8 + 5
+    } if (n > 1000) {
+      var jiajia = Math.round((n - 1000) / 1000)
+      jg = jg + 8 + (jiajia + 1) * 4 + 5
+    } console.log(jg)
+  }
+</script>
+
+<script>15
+  var a = Number(prompt("a"))
+  var b = Number(prompt("b"))
+  var c = Number(prompt("c"))
+
+  if (a > b) {
+    a > c
+    console.log(a)
+  } else if (b > c) {
+    b > a
+    console.log(b)
+  } else if (c > a) {
+    c > b
+    console.log(c)
+  }
+</script>
+
+<script>16
+  var a = Number(prompt("a"))
+  var b = Number(prompt("b"))
+  var c = Number(prompt("c"))
+
+  if (a + b > c && b + c > a && a + c > b) {
+    if (a - b < c && a - c < b && b - c < a)
+      console.log("yes")
+  } else {
+    console.log("no")
+  }
+</script>
+
+<script>17
+  var a = Number(prompt("a"))
+
+  if (a % 4 == 0) {
+    if (a % 100 == 0 && a % 400 != 0) {
+      console.log("N")
+    } else if (a % 4 == 0) {
+      if (a % 3200 == 0) {
+        console.log("N")
+      } else if (a % 100 == 0) {
+        console.log("Y")
+      }
+    }
+  } else {
+    console.log("N")
+  }
+</script>
+
+<script>18
+  var x = Number(prompt("x"))
+  var y = Number(prompt("y"))
+
+  if (x >= -1 && x <= 1) {
+    if (y >= -1 && y <= 1)
+      console.log("yes")
+  } else {
+    console.log("no")
+  }
+</script>
+
+<script>19
+  var a = Number(prompt("a"))
+  var b = Number(prompt("b"))
+  var c
+  var fh = prompt()
+
+  if (fh != "+" && fh != "-" && fh != "*" && fh != "/") {
+    console.log("Invalid operator!")
+  } if (fh == "+") {
+    c = a + b
+    console.log(c)
+  }else if (fh == "-") {
+    c = a - b
+    console.log(c)
+  }else if (fh == "*") {
+    c = a * b
+    console.log(c)
+  }else if (fh == "/") {
+    if (b == 0) {
+      console.log("Divided by zero!")
+    } else if (b != 0) {
+      c = a / b
+      console.log(c)
+    }
+  }
+</script>
+
+<script>21
+  var n = Number(prompt("n"))
+  var x = Number(prompt("x"))
+  var y = Number(prompt("y"))
+  var c = Math.ceil( y / x )
+  var s = n - c
+  
+console.log(s)
+</script>
