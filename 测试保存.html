@@ -487,13 +487,13 @@
   } if (fh == "+") {
     c = a + b
     console.log(c)
-  }else if (fh == "-") {
+  } else if (fh == "-") {
     c = a - b
     console.log(c)
-  }else if (fh == "*") {
+  } else if (fh == "*") {
     c = a * b
     console.log(c)
-  }else if (fh == "/") {
+  } else if (fh == "/") {
     if (b == 0) {
       console.log("Divided by zero!")
     } else if (b != 0) {
@@ -507,8 +507,186 @@
   var n = Number(prompt("n"))
   var x = Number(prompt("x"))
   var y = Number(prompt("y"))
-  var c = Math.ceil( y / x )
+  var c = Math.ceil(y / x)
   var s = n - c
-  
-console.log(s)
+
+  console.log(s)
+</script>
+
+<script> //猜数字
+  var a = Math.round(Math.random() * 100)
+
+  do {
+    var b = Number(prompt("b"))
+    if (a > b) {
+      alert("小了")
+    } else if (a < b) {
+      alert("大了")
+    }
+  } while (a != b) {
+    alert("正确")
+  }
+
+</script>
+
+<script>1
+  var n = Number(prompt("n"))
+  var f = 0
+  var c = 0
+  var sum = 0
+
+  while (c != n) {
+    f = Number(prompt("f"))
+    sum += f
+    c += 1
+  } console.log((sum / n).toFixed(2))
+
+</script>
+
+<script>2
+  var year = Number(prompt("year"))
+  var c = 0
+  var jieyu = 0
+  var sum = 0
+  var j = 0
+
+  do {
+    jieyu = Number(prompt("jieyu"))
+    sum += jieyu
+    c += 1
+  } while (c != year) {
+    j = ((sum / year).toFixed(2))
+    alert("$" + j)
+  }
+</script>
+
+<script>3
+  var n = Number(prompt("n"))
+  var cj
+  var sum = 0
+  var i = 0
+
+  for (i = 0; i < n; i++) {
+    cj = Number(prompt("成绩"))
+    sum += cj
+  } alert((sum / n).toFixed(4))
+
+</script>
+
+<script>4
+  var n = Number(prompt("n"))
+  var sum = 0
+  var c = 0
+  var j = 0
+
+  while (c != n) {
+    j = Number(prompt("j"))
+    sum += j
+    c += 1
+  } var p = ((sum / n).toFixed(5))
+
+  console.log(sum, p)
+</script>
+
+<script>5
+  var n = Number(prompt("n"))
+  var j = 0
+  var max = 0
+  var d = 0
+
+  do {
+    j = Number(prompt("max"))
+    if (j > max) {
+      max = j
+    }
+    d += 1
+  } while (d != n) {
+    alert(max)
+  }
+</script>
+
+<script>6
+  var n = Number(prompt("n"))
+  var i
+  var s
+  var j
+  var max = 0
+  var min = 1000
+
+  for (i = 0; i < n; i++) {
+    s = Number(prompt("sr"))
+    if (s > max) {
+      max = s
+    }
+    if (s < min) {
+      min = s
+    }
+  } j = max - min
+  alert(j)
+</script>
+
+<script>7
+  var day = Number(prompt("day"))
+  var j
+  var jsum = 0
+  var y
+  var ysum = 0
+  var t
+  var tsum = 0
+  var c = 0
+  var sum
+
+  while (c != day) {
+    j = Number(prompt("j"))
+    jsum += j
+    y = Number(prompt("y"))
+    ysum += y
+    t = Number(prompt("t"))
+    tsum += t
+    c++
+  } sum = jsum + ysum + tsum
+  console.log(jsum, ysum, tsum, sum)
+</script>
+
+<script>8
+  var n = Number(prompt("n"))
+  var neijiaohe = (n - 2) * 180
+  var jiaosum = 0
+  var i = 1
+  var jiao = 0
+  var z = 0
+
+  do {
+    jiao = Number(prompt("jiao"))
+    jiaosum += jiao
+    i += 1
+  } while (i != n) {
+    z = neijiaohe - jiaosum
+  } alert(z)
+</script>
+
+<script>9
+  var a = Number(prompt("a"))
+  var b = Number(prompt("b"))
+  var sum
+
+  debugger
+  if (a % 2 != 0) {
+    a = a
+  } else {
+    a += 1
+  } sum = a
+
+  if (b % 2 != 0) {
+    b = b
+  } else {
+    b -= 1
+  } b = b
+
+  do {
+    a = a + 2
+    sum = sum + a
+  } while (a != b) {
+    alert(sum)
+  }
 </script>
