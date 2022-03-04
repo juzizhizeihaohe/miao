@@ -126,7 +126,7 @@ var b = Number(prompt("b"))
 
 if (a % 2 == 0) {
   a += 1
-} 
+}
 
 var sum = 0
 
@@ -141,7 +141,7 @@ var m = Number(prompt())
 var n = Number(prompt())
 
 if (m % 17 != 0) {
- m += (17 -(m % 17))
+  m += (17 - (m % 17))
 }
 
 var sum = 0
