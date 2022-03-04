@@ -29,9 +29,9 @@ for (let i = 1; i <= Y; i++) {
 debugger
 let N = Number(prompt("工资"))
 const j = N
-const K = 0.1
+var K = 0.1
 let totalPrice = 200
-let f = true
+let f = truevar
 
 for (let i = 1; i <= 20; i++) {
   totalPrice = totalPrice + (totalPrice * K)
@@ -41,13 +41,13 @@ for (let i = 1; i <= 20; i++) {
     break
     f = false
   }
-}
+} 
 if (f = true) {
   console.log("Impossible")
 }
 
 //斐波那契数列
-const K = Number(prompt("k"))
+var K = Number(prompt("k"))
 let a = 1
 let b = 1
 let c = 0
@@ -68,3 +68,12 @@ for (let i = 2; i <= time; i++) {
   z = z + 2 * h
 } console.log(z.toFixed(4), (h / 2).toFixed(7))
 
+//函数
+//阶乘
+function jc(n) {
+  var j = 1 
+  for (let i = 1; i <= n; i++){
+    j *= i
+  }
+  return j
+}
