@@ -63,8 +63,8 @@ let h = 20
 let z = h
 const time = 10
 
-for (let i = 2; i <= time; i++){
+for (let i = 2; i <= time; i++) {
   h = h / 2
-  z = z + 2 * h  
-}console.log(z.toFixed(4),(h/2).toFixed(7))
- 
+  z = z + 2 * h
+} console.log(z.toFixed(4), (h / 2).toFixed(7))
+
