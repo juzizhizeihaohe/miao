@@ -37,7 +37,7 @@ function fbnq(n) {
 
 //判断数字有几位  
 debugger;
-function pd(x) {//123
+function pd(x) { 
   位数计次 = 0
 
   while (x != 0) {
@@ -63,3 +63,23 @@ function sxh(x) {
   }
 }
 
+//回文数
+function pd(x) { 
+  位数计次 = 0
+
+  while (x != 0) {
+    x = x - (x % 10)
+    x = x / 10
+    位数计次++
+  } return (位数计次)
+}
+function fanzhuan(x) {
+  let js = 0
+  let jl = x
+  let ws = pd(x)
+
+  for (let i = 0; i < ws; i++) {
+    js = js + jl % 10 + ""
+    jl = (jl - (jl % 10)) / 10
+  } return (js == x + "")
+}
