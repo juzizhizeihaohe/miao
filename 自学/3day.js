@@ -41,7 +41,7 @@ for (let i = 1; i <= 20; i++) {
     break
     f = false
   }
-} 
+}
 if (f = true) {
   console.log("Impossible")
 }
@@ -71,8 +71,8 @@ for (let i = 2; i <= time; i++) {
 //函数
 //阶乘
 function jc(n) {
-  var j = 1 
-  for (let i = 1; i <= n; i++){
+  var j = 1
+  for (let i = 1; i <= n; i++) {
     j *= i
   }
   return j
