@@ -52,7 +52,7 @@ function rq(year, month) {
   }
 
   //计算年数共计的天数，循环不同的情况并记录，此处有优化写法，
-  //var = year - 1
+  //var year = year - 1
   //(形参提供的年份还没有完全结束，要计算共计的天数需要分开计算年和月的值)
   //var day = y * 365 + Math.floor(y / 4) - Math.floor(y / 100) + Math.floor(y / 400)
   //直接在这里区分，闰年非闰年的天数，运算后直接出结果，可以省去一个函数，得出年份的总天数
@@ -67,3 +67,42 @@ function rq(year, month) {
 }
 
 
+//优化
+function 月(year, month) {
+  switch (month) {
+    case 1:
+    case 3:
+    case 5:
+    case 7:
+    case 8:
+    case 10:
+    case 12:
+      return 31;
+    case 2:
+      if (闰年(year)) {
+        return 29;
+      } else {
+        return 28;
+      }
+    case 4:
+    case 6:
+    case 9:
+    case 11:
+      return 30;
+  }
+}
+
+function rq(year, month) {
+  let day = 0
+  let y = year - 1
+  
+  var yday = y * 365 + Math.floor(y / 4) - Math.floor(y / 100) + Math.floor(y / 400)
+ 
+  for (let j = 1; j < month; j++) {
+    day += 月(year, j)
+  } day += yday
+ 
+  day = (day + 1) % 7
+ 
+  return day
+}
