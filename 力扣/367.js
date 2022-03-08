@@ -4,6 +4,7 @@
  * 根据完全平方数的性质，我们只需要直接判断 num 的平方根 是否为整数即可。
  */
 
+//遍历解法
 var isPerfectSquare = function (num) {
   let j = 1
   let sum = 0
