@@ -78,6 +78,57 @@ function powr(a, n) {
   if (n == 0) {
     return 1
   } else {
-    return a * powr(a , n - 1)
+    return a * powr(a, n - 1)
+  }
+}
+
+
+//阶乘
+function factorial(x) {
+  if (x == 1) {
+    return 1
+  } else {
+    return x * factorial(x - 1)
+  }
+}
+
+//斐波那契数列的第n项是几
+function fibb(n) {
+  if (n < 3) {//斐波那契数列前两项都是1，比第三位小的n都返回1
+    return 1
+  } else {
+    return fibb(n - 2) + fibb(n - 1)
+  }
+}
+
+/*fibb(4)
+因为4>3
+所以进入else
+fibb(4 - 2) + fibb(4 - 1)
+fibb(2) + fibb(3)
+
+fibb(2),fibb(3)
+因为2<3,3=3
+所以直接返回1，和进入else
+fibb(3 - 2) + fibb(3 - 1)
+fibb(1) + fibb(2)
+
+fibb(1),fibb(2)
+因为1<3，2<3
+所以直接返回1
+
+fibb(1) + fibb(2) == 1 + 1 返回2
+
+fibb(2) == 1
+fibb(3) == 2
+fibb(2) + fibb(3) == 3
+fibb(4) == 3
+*/
+
+function fibb(n) {
+  if (n < 3) {
+    return 1
+  } else {
+    return fibb(n - 1) + fibb(n - 2)//斐波那契数列的第三项是前两项的和（模糊的的感觉，递归时要根据实际的计算过程来书写）
   }
 }
