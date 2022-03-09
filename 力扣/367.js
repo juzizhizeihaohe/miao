@@ -13,8 +13,8 @@ var isPerfectSquare = function (num) {
     sum = i * j
     if (sum == num) {
       return true
-    } 
-  }return false
+    }
+  } return false
 };
 
 var isPerfectSquare = function (num) {
@@ -25,6 +25,28 @@ var isPerfectSquare = function (num) {
     sum = i * j
     if (sum == num) {//每一次循环都作比较，是否与输入的形参相同，直至找到相等的输出true，或直至遍历结束，返回false
       return true
-    } 
-  }return false
+    }
+  } return false
+};
+
+//二分法
+/**
+ * @param {number} num
+ * @return {boolean}
+ */
+var isPerfectSquare = function (num) {
+  let left = 0
+  let right = num//设置围栏
+
+  while (left <= right) {
+    let mid = Math.floor((right - left) / 2) + left
+    let square = mid * mid
+    if (square < num) {
+      left = mid + 1
+    } else if (square > num) {
+      right = mid - 1
+    } else {
+      return true
+    }
+   }return false
 };
