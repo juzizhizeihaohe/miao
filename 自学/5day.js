@@ -38,7 +38,7 @@ function sxh(x) {
 
   for (let i = 0; i < b; i++) {
     ge = a % 10
-    sum += ge ** b 
+    sum += ge ** b
     a = (a - ge) / 10
   } if (sum == x) {
     return true

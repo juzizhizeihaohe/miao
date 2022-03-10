@@ -85,7 +85,7 @@ var c = []
 for (let i = 0; i < a; i++) {
   b = Number(prompt())
   c.unshift(b)
-}for (let j = 0; j < a; j++) {
+} for (let j = 0; j < a; j++) {
   console.log(c[j])
 }
 

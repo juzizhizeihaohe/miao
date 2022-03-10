@@ -48,5 +48,5 @@ var isPerfectSquare = function (num) {
     } else {
       return true
     }
-   }return false
+  } return false
 };

@@ -95,15 +95,15 @@ function 月(year, month) {
 function rq(year, month) {
   let day = 0
   let y = year - 1
-  
+
   var yday = y * 365 + Math.floor(y / 4) - Math.floor(y / 100) + Math.floor(y / 400)
- 
+
   for (let j = 1; j < month; j++) {
     day += 月(year, j)
   } day += yday
- 
+
   day = (day + 1) % 7
- 
+
   return day
 }
 
