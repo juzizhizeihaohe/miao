@@ -125,11 +125,4 @@ fibb(3) == 2
 fibb(2) + fibb(3) == 3
 fibb(4) == 3
 */
-
-function fibb(n) {
-  if (n < 3) {
-    return 1
-  } else {
-    return fibb(n - 1) + fibb(n - 2)//斐波那契数列的第三项是前两项的和（模糊的的感觉，递归时要根据实际的计算过程来书写）
-  }
-}
+ 
