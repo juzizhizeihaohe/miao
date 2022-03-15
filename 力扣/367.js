@@ -35,7 +35,7 @@ var isPerfectSquare = function (num) {
  * @return {boolean}
  */
 var isPerfectSquare = function (num) {
-  let left = 0
+  let left = 1
   let right = num//设置围栏
 
   while (left <= right) {
@@ -49,4 +49,4 @@ var isPerfectSquare = function (num) {
       return true
     }
   } return false
-};
+}

@@ -19,3 +19,26 @@ var mySqrt = function (x) {
     }
   }
 };
+
+//二分法
+/*
+* @param {number} x
+* @return {number}
+*/
+var mySqrt = function (x) {
+  let left = 1
+  let right = x
+  while (left <= right) {
+    let min = Math.floor((right - left) / 2) + left
+    let spend = min * min
+    if (spend <= x) {
+      left = min + 1
+    } else {
+      right = min - 1
+    }
+  } return right
+}
+
+ 
+
+
