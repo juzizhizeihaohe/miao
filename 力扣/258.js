@@ -49,3 +49,5 @@ var addDigits = function (num) {
     } return sum//输出最后的结果
   }
 }
+
+//完全可以使用递归的方式进行计算
