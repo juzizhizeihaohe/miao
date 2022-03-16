@@ -70,3 +70,20 @@ var addDigits = function (num) {
      return addDigits(sum)
    }
 };
+
+//直接模9
+/**
+ * @param {number} num
+ * @return {number}
+ */
+var addDigits = function (num) {
+  if (num <= 9) {
+     return num
+  } else {
+    if (num % 9 == 0) {
+      return 9
+    }
+    return num % 9
+   }
+};
+//一个数组只有一个数和零组成，他模上9他就等于那个数
