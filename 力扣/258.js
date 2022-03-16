@@ -51,3 +51,22 @@ var addDigits = function (num) {
 }
 
 //完全可以使用递归的方式进行计算
+/**
+ * @param {number} num
+ * @return {number}
+ */
+ var addDigits = function(num) {
+   let sum = 0
+   let ge = 0
+
+   while (num > 0) {
+     ge = num % 10
+     sum += ge
+     num = (num - ge) / 10
+     
+   } if (sum < 10) {
+     return sum
+   } else {
+     return addDigits(sum)
+   }
+};
