@@ -3,7 +3,7 @@
  * @return {number}
  */
 var findMaxConsecutiveOnes = function (nums) {
-  let max = 0
+  let max = 0//只记录最大值，其他的干扰项不记录
   let a = 0
 
   for (let i = 0; i < nums.length; i++) {
@@ -18,3 +18,25 @@ var findMaxConsecutiveOnes = function (nums) {
   } return max
 }
 
+
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var findMaxConsecutiveOnes = function (nums) {
+  let max = 0
+
+  let a = 0
+
+  for (let i = 0; i < nums.length; i++) {
+
+    if (nums[i] == 1) {
+      a++
+      if (a > max) {
+        max = a//等号前后的顺序很重要，前一个是目标值，后一个是要赋的给他的值，不能前后颠倒
+      }
+    } else {
+      a = 0
+    }
+  } return max
+};
