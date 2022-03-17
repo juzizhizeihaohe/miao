@@ -25,7 +25,7 @@ var reverse = function (x) {
  * @param {number} x
  * @return {number}
  */
- var reverse = function (x) {
+var reverse = function (x) {
   let sc = ""//使用字符串作为放置空间
 
   if (x < 0) {
