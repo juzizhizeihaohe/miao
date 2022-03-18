@@ -28,10 +28,10 @@ var removeDuplicates = function (nums) {
   let long = nums.length
   let jc = 0 //需要引入另一个数字来放置不一样的数字
 
-  for (let i = 0; i < long; i++){
+  for (let i = 0; i < long; i++) {
     if (nums[i] != nums[i - 1]) {//如果数组的后一项不等于，前一项，就把nums的第一项替换为这个数字
       nums[jc] = nums[i]
       jc++//这个递增参数控制放置不同数字的位置，这个就叫双指针
     }
-  }return jc
+  } return jc
 };
