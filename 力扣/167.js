@@ -30,7 +30,6 @@ var twoSum = function (numbers, target) {
       i++
     }
   } return [i + 1, j + 1]
-}//正经的简单双指针
-
+}//zheng'jin
 
 
