@@ -50,3 +50,17 @@ var isHappy = function (n) {
     }
   }
 };
+
+
+var isHappy = function (n) {
+  let sum = 0
+  while (n > 0) {
+    let ng = n % 10
+    sum += ng * ng
+    n = (n - ng) / 10
+  } if (sum == 1) {
+    return true
+  } if (sum == 4) {
+    return false
+  } return isHappy(sum)
+}
