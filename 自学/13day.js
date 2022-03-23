@@ -53,3 +53,13 @@ function ja(x) {
   }
 }
 //既可以判断正数，也可以判断负数
+
+function daying(hangshu, fuhao) {
+  let k = ""
+  let h = ""
+  for (let i = 0; i < hangshu; i++) {
+    k = k + fuhao
+    h = h + k + "\n"
+  } console.log(h)
+}
+
