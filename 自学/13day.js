@@ -38,3 +38,18 @@ function ja(x) {
   }
 }
 //每次减去2，判断能不能减到0，能就是偶数，不能就是奇数
+
+function ja(x) {
+  if (x == 1) {
+    return "奇"
+  } else if (x == 0) {
+    return "偶"
+  } else {
+    if (x > 0) {
+      return ja(x - 2)
+    } if (x < 0) {
+      return ja(x + 2)
+    }
+  }
+}
+//既可以判断正数，也可以判断负数
