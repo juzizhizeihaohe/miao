@@ -2,20 +2,28 @@
  * @param {number} n
  * @return {number[]}
  */
-var countBits = function (n) {
-  let a = []
-  let b = []
-  for (let i = 0; i <= n; i++) {
-    a.push(i.toString(2))
-    for (let j = 0; j < a[i].length; j++) {
-      let c = 0
-      if (a[i].charAt(j) == 1) {
-        c++
-        b.push(c)
-      }
+var erjinzhi = function (n) {
+  let b = 0
+
+  while (n > 0) {
+    ng = n % 2
+    if (ng === 1) {
+      b++
     }
+    n = (n - ng) / 2
   } return b
 }
+
+/**
+ * @param {number} n
+ * @return {number[]}
+ */
+var countBits = function (n) {
+  let a = []
+  for (let i = 0; i <= n; i++) {
+    a.push(erjinzhi(i))
+  } return a
+};
 
 
 
