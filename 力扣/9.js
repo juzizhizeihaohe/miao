@@ -14,4 +14,4 @@ var isPalindrome = function (x) {
   } if (Number(end) == b) {
     return true
   } return false
-};
+}
