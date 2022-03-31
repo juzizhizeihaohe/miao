@@ -12,22 +12,22 @@ var romanToInt = function (s) {
   }
   for (let j = 0; j < (s.length); j++) {
     if (a[j] + a[j + 1] == "IV") {
-      j += 2
+      j += 1
       sum += 4
     } else if (a[j] + a[j + 1] == "IX") {
-      j += 2
+      j += 1
       sum += 9
     } else if (a[j] + a[j + 1] == "XL") {
-      j += 2
+      j += 1
       sum += 40
     } else if (a[j] + a[j + 1] == "XC") {
-      j += 2
+      j += 1
       sum += 90
     } else if (a[j] + a[j + 1] == "CD") {
-      j += 2
+      j += 1
       sum += 400
     } else if (a[j] + a[j + 1] == "CM") {
-      j += 2
+      j += 1
       sum += 900
     }
     else if (a[j] == "I") {
