@@ -36,3 +36,36 @@ var reverseList = function(head) {
     b++
   } return head
 };
+var reverseList = function (head) {
+  for (let i = head.length - 1; i >= 0; i--) {
+    let a = head.pop()
+    let b = 0
+    head[b] = a
+    b++
+  } return head
+};
+
+var reverseList = function(head) {
+  for (let i = head.length - 1; i >= 0; i--) {
+    let a = head.pop()
+    let b = 0
+    head[b] = a
+    b++
+  } return head
+};var reverseList = function (head) {
+  for (let i = head.length - 1; i >= 0; i--) {
+    let a = head.pop()
+    let b = 0
+    head[b] = a
+    b++
+  } return head
+};
+
+var reverseList = function(head) {
+  for (let i = head.length - 1; i >= 0; i--) {
+    let a = head.pop()
+    let b = 0
+    head[b] = a
+    b++
+  } return head
+};
