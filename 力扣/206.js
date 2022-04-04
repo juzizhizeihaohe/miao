@@ -27,3 +27,7 @@ var reverseList = function (head) {
     b++
   } return head
 };
+
+var reverseList = function(head) {
+
+};
