@@ -10,3 +10,16 @@ function slice(array, start, end) {
     a.push(array[i])
   } return a
 }
+
+function fill(array, val) {
+  for (let i = 0; i < array.length; i++) {
+    array[i] = val
+  } return array
+}
+
+function sum(array) {
+  let sum = 0
+  for (let i = 0; i < array.length; i++) {
+    sum += array[i]
+  } return sum
+}
