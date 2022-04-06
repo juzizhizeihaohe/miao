@@ -38,3 +38,19 @@ var distributeCandies = function (candyType) {
   } return CanEat
 }
 
+var distributeCandies = function (candyType) {
+  let a = 0
+  let b = []
+  let c = candyType.length / 2
+
+  for (let i = 0; i < candyType.length; i++) {
+    if (candyType[i] != a) {
+      b.push(candyType[i])
+      a = candyType[i]
+    }
+  } if (b.length == 1) {
+    return c
+  } if (b.length > c) {
+    return c
+  } return b.length
+};
