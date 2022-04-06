@@ -16,21 +16,25 @@ var nosone = function (candyType) {
   } return sum
 }
 
+var sun = function (candyType) {
+  let a = candyType[0]
+
+  for (let i = 1; i < candyType.length; i++) {
+    if (a != candyType[i]) {
+      return false
+    }
+  } return true
+}
 
 var distributeCandies = function (candyType) {
   let long = candyType.length
   let CanEat = long / 2
   var sumd = nosone(candyType)
 
-
-
-  if (CanEat < sumd) {
-    return CanEat
-  } if (CanEat == 1) {
+  if (sun(candyType)) {
+    return 1
+  } if (CanEat >= sumd) {
     return sumd
-  } if (sumd == 1) {
-    return CanEat
-  }
-  return sumd
+  } return CanEat
 }
 
