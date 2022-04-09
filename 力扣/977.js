@@ -11,7 +11,5 @@ var sortedSquares = function (nums) {
     if (nums[i] > max) {
       nums[i] = max
     }
-  } for (let i = 0) {
-    123
-  }
+  } 
 };
