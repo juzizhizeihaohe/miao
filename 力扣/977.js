@@ -12,6 +12,6 @@ var sortedSquares = function (nums) {
       nums[i] = max
     }
   } for (let i = 0) {
-    
+    123
   }
 };
