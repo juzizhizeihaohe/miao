@@ -16,4 +16,4 @@ var multiply = function (num1, num2) {
 };
 //可以计算，但是达到了js的精度极限，无法完整的计算出答案
 
-
+是的
