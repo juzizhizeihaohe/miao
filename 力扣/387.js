@@ -1,12 +1,23 @@
 var firstUniqChar = function (s) {
-  for (let i = 0; i < s.length; i++) {
-    let a = s[i]
-    for (let j = 0; j < s.length; j++) {
-      if (a == s[i + 1]) {
-        a = s[a++]
+  let a = []
+  let q = 0
+
+  for (let b of s) {
+    a.push(b)
+  }
+  let f = Array(a.length).fill(0)
+  for (let c = 0; c < a.length; c++) {
+    let d = a[c]
+
+    for (let e = c + 1; e < a.length; e++) {
+      if (d == a[e]) {
+        f[c]++
       }
-    }
-
-  } return i
-
+    } for (let s of f) {
+      if (s == 0) {
+        return q
+      }
+      q++
+    }  
+  }
 };
