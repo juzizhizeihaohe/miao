@@ -1,0 +1,23 @@
+
+b = { x: 1, y: 2, z: 10 }
+for (let a in b) {
+  if (b[a] == 10) {
+    console.log(true)
+  }
+}
+
+true
+
+//for in 循环只能在数组对象上使用
+
+
+b = [1, 2, 3, 4, 5, 6, 7, 8, 10]
+for (let a of b) {
+  if (a == 10) {
+    console.log(true)
+  }
+}
+
+true
+
+//for of 循环能在可叠加对象上使用

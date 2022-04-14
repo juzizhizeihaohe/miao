@@ -1,0 +1,3 @@
+var firstUniqChar = function(s) {
+
+};
