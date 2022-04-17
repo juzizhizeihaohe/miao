@@ -36,3 +36,21 @@ var firstUniqChar = function (s) {
     }
   } return -1//如果没有下标值为1的，如题所示，输出-1
 };
+
+var firstUniqChar = function (s) {
+  let a = {}
+
+  for (let i = 0; i < s.length; i++) {
+    let b = s[i]
+    if (b in a) {
+      a[b]++
+    } else {
+      a[b] = 1
+    }
+  } for (let j = 0; j < s.length; j++) {
+    let c = s[j]
+    if (a[c] == 1) {
+      return j
+    }
+  } return -1
+};
