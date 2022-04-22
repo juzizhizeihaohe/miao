@@ -13,13 +13,7 @@ function jc(x) {
   }
 }
 
-function fibb(n) {
-  if (n < 3) {
-    return 1
-  } else {
-    return fibb(n - 1) + fibb(n - 2)
-  }
-}
+ 
 
 
 function fx(n) {
