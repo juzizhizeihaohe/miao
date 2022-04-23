@@ -32,6 +32,10 @@ function arrayToArray(head) {
   }
 }
 
-function sow(asdf) {
-  
+function nth(list, n) {
+  let b = []
+  let nod = {
+    val: array,
+    next: NaN
+  }
 }
