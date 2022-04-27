@@ -35,3 +35,17 @@ function paixu(array) {
     } array[j + 1] = t
   } return array
 }
+//先在第一个循环中选定第二个值，记录他的值，进入第二个循环，对比前一项的大小，如果大于他，就用前一项替换他，然后一直遍历直到有一项小于他，停止替换后，把其记录的值赋给小于他的后一项，
+
+function chazhi(array) {
+  for (let i = 1; i < array.length; i++) {
+    let a = array[i]
+    for (var j = i - 1; j >= 0; j--) {
+      if (array[j] > a) {
+        array[j + 1] = array[j]
+      } else {
+        break
+      }
+    } array[j + 1] = a
+  } return array
+}
