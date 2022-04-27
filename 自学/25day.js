@@ -49,3 +49,17 @@ function chazhi(array) {
     } array[j + 1] = a
   } return array
 }
+
+
+//插值排序
+function chazhi(array) {
+  for (var i = 1; i < array.length; i++) {
+    for (var j = i - 1; j >= 0; j--) {
+      var a = array[j]
+      if (array[j] > array[i]) {
+        array[j] = array[i]
+        array[j + 1] = a
+      }
+    }
+  } return array
+}
