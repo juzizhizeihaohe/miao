@@ -116,6 +116,20 @@ function selectSort(array) {
 
 
 //归并排序
-function mergeSort(array) {
-  
+function kanban(array) {
+  let a = []
+  let b = []
+  for (let i = 0, j = Math.round((array.length) / 2); i <= Math.round((array.length) / 2) - 1; i++, j++) {
+    a.push(array[i])
+    b.push(array[j])
+  } console.log(a, b)
 }
+//分离数组，但只能分离偶数长度的数组
+function fanban(array) {
+  let a = []
+  for (let i = 0; i <= Math.round((array.length) / 2); i++) {
+    let b = array.pop()
+    a.push(b)
+  } console.log(array, a)
+}
+
