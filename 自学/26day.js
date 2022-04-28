@@ -58,11 +58,12 @@ function chazhi(array) {
   for (var i = 1; i < array.length; i++) {
     var a = array[i]
     for (var j = i - 1; j >= 0; j--) {
-      if (array[j] > array[i]) {
-        array[j] = array[i]
-        array[j + 1] = a
+      if (array[j] > a) {
+        array[j + 1] = array[j]
+      } else {
+        break
       }
-    }
+    } array[j + 1] = a
   } return array
 }
 
@@ -125,6 +126,8 @@ function kanban(array) {
   } console.log(a, b)
 }
 //分离数组，但只能分离偶数长度的数组
+
+
 function fanban(array) {
   let a = []
   for (let i = 0; i <= Math.round((array.length) / 2); i++) {
@@ -132,4 +135,38 @@ function fanban(array) {
     a.push(b)
   } console.log(array, a)
 }
+//能分成两段，但是长度不同
 
+//归并排序
+function margeSort(array) {
+  if (array.length < 2) {
+    return array
+  }
+  var mid = Math.floor(array.length / 2)
+  var left = array.slice(0, mid)
+  var right = array.slice(mid)
+  //右边排
+  margeSort(left)
+  //左边排
+  margeSort(right)
+
+  //合起来
+  var i = 0
+  var j = 0
+  var k = 0
+
+  while (i < left.length && j < right.length) {
+    if (left[i] < right[j]) {
+      array[k++] = left[i++]
+    } else {
+      array[k++] = right[j++]
+    }
+  }
+  while (i < left.length) {
+    array[k++] = left[j++]
+  }
+  while (j < right.length) {
+    array[k++] = right[j++]
+  }
+  return array
+}
