@@ -5,3 +5,4 @@ b = [a, b, c, d]
 let c = a.slice(4)
 c = [e, f]
  
+撒地方
