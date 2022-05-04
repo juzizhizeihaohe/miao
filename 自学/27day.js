@@ -6,3 +6,4 @@ let c = a.slice(4)
 c = [e, f]
  
  
+and
