@@ -170,3 +170,12 @@ function margeSort(array) {
   }
   return array
 }
+
+var ary = [1, 2, 3, 4, 5, 6, 7]
+var sum = 1
+for (var i = 0; i < ary.length; i++){
+  sum = sum * ary[i]
+}
+console.log(sum)
+
+ 
