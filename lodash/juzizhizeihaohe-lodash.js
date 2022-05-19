@@ -1,16 +1,20 @@
 var juzizhizeihaohe = {
+ 
+
   chunk: function (array, size) {
-    let len = array.length
-    let res = []
-    for (let i = 0; i < len; i += size) {
-      let temp = []
-      let n = Math.min(i + size, len)
-      for (let j = i; j < n; j++) {
-        temp.push(array[j])
+    let b = []
+    let a = []
+    for (let i = 0; i < array.length; i = i + size) {
+      for (let j = i; j < i + size; j++) {
+        a.push(array[j])
+        array.shift()
+      } b.push(a)
+      if (array.length < size) {
+        a = array
       }
-      res.push(temp)
-    }
-    return res
+      b.push(a)
+      a = []
+    } console.log(b)
   },
 
   compact: function (array) {
@@ -54,4 +58,4 @@ for (var i = 0; i < 5; i++) {
   setTimeout(function () {
     console.log(i++);
   }, 4000);
-}console.log(i)
+} console.log(i)
