@@ -1,5 +1,5 @@
 var juzizhizeihaohe = {
- 
+
 
   chunk: function (array, size) {
     let b = []
@@ -14,10 +14,9 @@ var juzizhizeihaohe = {
       }
       b.push(a)
       a = []
-    } console.log(b)
-  },
+    } return (b)
+  }
+
 
  
 }
-
- 
