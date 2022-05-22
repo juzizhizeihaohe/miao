@@ -65,7 +65,7 @@ var juzizhizeihaohe = {
     for (let i = 0; i < n; i++) {
       ary.push(array[i])
     }
-   
+
     return function (array, ary) {
       let b = []
       for (let i = 0; i < values.length; i++) {
@@ -82,7 +82,18 @@ var juzizhizeihaohe = {
       } return b
     }
   },
-  
 
+  dropRight: function (array, n = 1) {
+    if (n == 0) {
+      return array
+    }
+    if (n >= array.length) {
+      return []
+    }
+
+    for (let i = 0; i < n; i++) {
+      array.pop()
+    } return array
+  }
 
 }
