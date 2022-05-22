@@ -26,7 +26,7 @@ var juzizhizeihaohe = {
   },
 
 
-  concat: function (array) {
+  compact: function (array) {
     let a = []
     for (let i = 0; i < array.length; i++) {
       if (array[i] && array[i] !== 0) {
