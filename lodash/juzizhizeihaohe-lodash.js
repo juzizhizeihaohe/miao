@@ -33,7 +33,25 @@ var juzizhizeihaohe = {
         a.push(array[i])
       }
     } return a
-  }
+  },
 
+  difference: function (array, values) {
+    let b = []
+    for (let i = 0; i < values.length; i++) {
+      let a = values[i]
+      for (let j = 0; j < array.length; j++) {
+        if (array[j] == a) {
+          array[j] = "no"
+        }
+      }
+    } for (let e = 0; e < array.length; e++) {
+      if (array[e] !== "no") {
+        b.push(array[e])
+      }
+    } return b
+  },
 
 }
+
+
+
