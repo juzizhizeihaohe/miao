@@ -1,7 +1,7 @@
 var juzizhizeihaohe = {
 
 
-  chunk: function (array, size) {
+  chunk: function (array, size = 1) {
     let a = array.length//原始数组长度
     let c = a % size//取出所有完整size后的剩余长度
     let b = parseInt(a / size)//数组里能取出几个完整的size
@@ -23,6 +23,17 @@ var juzizhizeihaohe = {
       } e.push(d)
     }
     return e
+  },
+
+
+  concat: function (array) {
+    let a = []
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] && array[i] !== 0) {
+        a.push(array[i])
+      }
+    } return a
   }
+
 
 }

@@ -25,3 +25,4 @@ function f(ary, chushizhi, fct) {
   console.log(chushizhi)
 }
 
+function bind 
