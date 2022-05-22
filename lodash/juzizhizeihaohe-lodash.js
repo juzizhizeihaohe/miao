@@ -94,6 +94,11 @@ var juzizhizeihaohe = {
     for (let i = 0; i < n; i++) {
       array.pop()
     } return array
-  }
+  },
 
+  fill: function (array, value, start = 0, end = array.length) {
+    for (let i = start; i < end; i++) {
+      array[i] = value
+    } return array
+  }
 }
