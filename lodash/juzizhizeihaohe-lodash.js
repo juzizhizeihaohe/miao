@@ -1,7 +1,7 @@
 var juzizhizeihaohe = {
 
 
-  chunk: function (array, size = 1) {
+  chunk: function chunk(array, size = 1) {
     let a = array.length//原始数组长度
     let c = a % size//取出所有完整size后的剩余长度
     let b = parseInt(a / size)//数组里能取出几个完整的size
@@ -26,7 +26,7 @@ var juzizhizeihaohe = {
   },
 
 
-  compact: function (array) {
+  compact: function compact(array) {
     let a = []
     for (let i = 0; i < array.length; i++) {
       if (array[i] && array[i] !== 0) {
@@ -35,7 +35,7 @@ var juzizhizeihaohe = {
     } return a
   },
 
-  difference: function (array, values) {
+  difference: function difference(array, values) {
     let b = []
     for (let i = 0; i < values.length; i++) {
       let a = values[i]
@@ -52,7 +52,7 @@ var juzizhizeihaohe = {
   },
 
 
-  drop: function (array, n = 1) {
+  drop: function drop(array, n = 1) {
     var ary = []
     if (n == 0) {
       return array
@@ -66,24 +66,10 @@ var juzizhizeihaohe = {
       ary.push(array[i])
     }
 
-    return function (array, ary) {
-      let b = []
-      for (let i = 0; i < values.length; i++) {
-        let a = values[i]
-        for (let j = 0; j < array.length; j++) {
-          if (array[j] == a) {
-            array[j] = "no"
-          }
-        }
-      } for (let e = 0; e < array.length; e++) {
-        if (array[e] !== "no") {
-          b.push(array[e])
-        }
-      } return b
-    }
+    return difference(array, ary)
   },
 
-  dropRight: function (array, n = 1) {
+  dropRight: function dropRight(array, n = 1) {
     if (n == 0) {
       return array
     }
@@ -96,9 +82,11 @@ var juzizhizeihaohe = {
     } return array
   },
 
-  fill: function (array, value, start = 0, end = array.length) {
+  fill: function fill(array, value, start = 0, end = array.length) {
     for (let i = start; i < end; i++) {
       array[i] = value
     } return array
-  }
+  },
+
+
 }
