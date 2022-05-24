@@ -94,10 +94,20 @@ var juzizhizeihaohe = {
       if (typeof (array[i]) == 'number') {
         end.push(array[i])
       } if (typeof (array[i]) == 'object') {
-        for (let j = 0; j < (array[i]).length; j++){
+        for (let j = 0; j < (array[i]).length; j++) {
           end.push((array[i])[j])
         }
       }
     } return end
+  },
+
+  flattenDeep: function flattenDeep(array) {
+    for (let i = 0; i < array.length; i++) {
+      if (typeof (array[i]) == 'object') {
+        array = flattenDeep(flatten(array))
+      }
+    } return array
   }
+
 }
+
