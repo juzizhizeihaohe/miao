@@ -88,5 +88,16 @@ var juzizhizeihaohe = {
     } return array
   },
 
-
+  flatten: function flatten(array) {
+    let end = []
+    for (let i = 0; i < array.length; i++) {
+      if (typeof (array[i]) == 'number') {
+        end.push(array[i])
+      } if (typeof (array[i]) == 'object') {
+        for (let j = 0; j < (array[i]).length; j++){
+          end.push((array[i])[j])
+        }
+      }
+    } return end
+  }
 }
