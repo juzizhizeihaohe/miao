@@ -90,6 +90,7 @@ var juzizhizeihaohe = {
 
   flatten: function flatten(array) {
     let end = []
+
     for (let i = 0; i < array.length; i++) {
       if (typeof (array[i]) == 'number') {
         end.push(array[i])
@@ -98,7 +99,8 @@ var juzizhizeihaohe = {
           end.push((array[i])[j])
         }
       }
-    } return end
+    } array = end
+    return array
   },
 
   flattenDeep: function flattenDeep(array) {
@@ -109,7 +111,21 @@ var juzizhizeihaohe = {
     } return array
   },
 
-  flattenDepth:
+  flattenDepth: function flattenDepth(array, depth) {
+    let a = 1
+    while (depth > a) {
+      let end = []
+      for (let i = 0; i < array.length; i++) {
+        if (typeof (array[i]) == 'number') {
+          end.push(array[i])
+        } if (typeof (array[i]) == 'object') {
+          for (let j = 0; j < (array[i]).length; j++) {
+            end.push((array[i])[j])
+          }
+        }
+      } array = end
+      a++
+    } return array
 
+  }
 }
-
