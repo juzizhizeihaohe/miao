@@ -107,7 +107,9 @@ var juzizhizeihaohe = {
         array = flattenDeep(flatten(array))
       }
     } return array
-  }
+  },
+
+  flattenDepth:
 
 }
 
